@@ -38,7 +38,7 @@ const theme = merge(tailwind, {
         icon_darkest: tailwind.colors.gray[6],
         projectBackground: tailwind.colors.gray[1],
         cardColor: tailwind.colors.gray[7],
-        cardColorHover: tailwind.colors.gray[9]
+        cardColorHover: tailwind.colors.gray[1]
       },
     },
   },
