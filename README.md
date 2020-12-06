@@ -1,3 +1,3 @@
 ## 🦆 Portfolio website
 
-My portfolio website to show different projects and talk about my journey to becoming a Front-End developer.
+My portfolio website to showcase my portfolio and introduce myself through some background information.
