@@ -1,0 +1,38 @@
+---
+title: Roads distribution script
+date: 2014-04-15
+slug: roadsdistribution
+---
+
+<span style="color: var(--theme-ui-colors-gray-6)">Skills: Python developer </span>
+<br />
+<span style="color: var(--theme-ui-colors-gray-6)">Technology stack: Python & Flask for web UI</span>
+
+As a volunteer for youth orginsation "Jong Nederland Gennep" (kinda like boy scouts) we have a yearly fundraising called "Bloembollenactie".
+In this fundraising all our members get assigned a street in the village to sell flower bulbs.
+The assigining of streets to our members was an labour intense task because the members switched every year.
+The assigning had some parameters:
+
+- Younger kids get assigned a street as close as possible to them. For older kids it's not a problem to have a street assigned to them which they don't live in close proximity to.
+- No street is assigned outside of the village, but we have members who live in smaller towns next to Gennep.
+- All streets should be assigned so we cover the whole town. (there are more streets then members)
+
+So for this I automated the tasks by creating a script which divides all streets across the members based on their adress and Open Street maps data.
+For this is used some python libraries:
+
+- Python Flask for web UI
+- GeoPy
+- NumPy
+- Pandas
+
+The scripts runs as follows:
+
+- Rank orders our members based on age
+- Transforms all residential addresses to coordinates
+- Transforms all street data to coordinates
+- Then divides all streets based upon proximity of the coordinates
+
+Now it's just a matter of providing our member administration file as input (CSV).
+The script then provides an updated administration file with the designated streets assigned to each member.
+
+The source code can be seen here: <a href="https://github.com/guusyy/roadsDistributorScript" target="_blank"> Github </a>

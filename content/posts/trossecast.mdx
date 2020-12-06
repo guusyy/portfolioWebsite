@@ -1,0 +1,38 @@
+---
+title: Trossecast
+date: 2011-04-15
+slug: trossecast
+image: "https://guusnoij.nl/portfolioImages/trossecast.png"
+---
+
+<span style="color: var(--theme-ui-colors-gray-6)">Status of development: Still in progress </span>
+<br />
+<span style="color: var(--theme-ui-colors-gray-6)">Skills: Front-end development </span>
+<br />
+<span style="color: var(--theme-ui-colors-gray-6)">Made for device: desktop, tablet, mobile </span>
+<br />
+<span style="color: var(--theme-ui-colors-gray-6)">Technology stack: VueJS - VideoJS - JS - CSS</span>
+
+Together with a friend (designer), I'm developing a fun immersive music set experience.
+
+In this music video an artist performs his techno set in his car and meanwhile the users of this application can see 4 camera points of view at the same time.
+The user can switch between the different points of views by clicking on them.
+All these video's together with the music are (should be) in sync. This gives an extra dimension to the clip by showing the whole night ambience of the scene.
+We like the fact that when for example a street light passes, you first see it in some camera's point of view and then from the camera behind.
+
+The application is in alpha version and still in development. It's made with VueJS and is made so it scales with the amount of videos the artist has. The table you see
+as first screen will grow over time with all different kind of sets.
+
+The video makes use of an interactive "thumbnail navigation", which takes some time to load (10s+) because the thumbnails are for now client side rendered on opening.
+This was an expiriment to see if it was fast enought, but that unfortunately was not the case, in next steps we will just provide the thumbnail sprites from the server.
+
+These thumbnail sprites will be used for other purposes too, we're planning to make an interactive map with the thumbnails plotted on the route the car drives. The thumbnail
+show the view of the moment the car drived at that location.
+
+The current version of this application can be seen on: <a href="https://guusnoij.nl/trossecast" target="_blank">Trossecast</a>
+
+Keep in mind it is still under development and there might be some sync issues. 
+By loading the video once for a few seconds and then refreshing the page the issue is solved. Also the current video which is shown is only a small part of a set.
+I still need to implement incremental resolution mechanism, which could be turned on by the VideoJS library I use.
+
+The source code of the project can be seen on: <a href="https://github.com/guusyy/trossecast" target="_blank">Github</a>

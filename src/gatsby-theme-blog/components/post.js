@@ -8,6 +8,8 @@ import PostTitle from "./post-title"
 import PostFooter from "./post-footer"
 import PostHero from "./post-hero"
 
+import "./imgStyle.css"
+
 const Post = ({
   data: {
     post,
