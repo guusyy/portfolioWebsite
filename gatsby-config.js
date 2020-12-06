@@ -10,12 +10,33 @@ module.exports = {
     // Of course you can also add new values here to query them like usual
     // See all options: https://github.com/LekoArts/gatsby-themes/blob/master/themes/gatsby-theme-cara/gatsby-config.js
     siteTitleAlt: `Guus Noij - Design & Development`,
+    // Used for the site title and SEO
+    title: `Portfolio`,
+    // Used to provide alt text for your avatar
+    author: `Guus Noij`,
+    // Used for SEO
+    description: `My portfolio`,
+    // Used for resolving images in social cards
+    siteUrl: `https://guusnoij.nl`,
+    // Used for social links in the root footer
+    social: [
+    ],
   },
   plugins: [
     {
+      resolve: `gatsby-theme-blog`,
+      options: {
+        basePath: `/blog`,
+        preset: false,
+        mdx: false
+      },
+    },
+    {
       resolve: `@lekoarts/gatsby-theme-cara`,
       // See the theme's README for all available options
-      options: {},
+      options: {
+        basePath: `/`,
+      },
     },
     {
       resolve: `gatsby-plugin-google-analytics`,
